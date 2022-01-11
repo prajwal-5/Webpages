@@ -1,0 +1,43 @@
+body {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#title {
+  text-align: center;
+}
+
+#img-div {
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 100%;
+}
+
+#img-caption {
+  text-align: center;
+  padding: 2%;
+  font-family: "Lobster", cursive;
+  font-family: "Source Serif Pro", serif;
+}
+
+#image {
+  padding-top: 7%;
+  margin: auto;
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+#img-div {
+  align: center;
+}
+
+#tribute-info {
+  margin: 2.5%;
+  text-align: center;
+}
+
+#tribute-info > h2 {
+  margin: 5% 9%;
+  font-family: "Lobster", cursive;
+  font-family: "Source Serif Pro", serif;
+}

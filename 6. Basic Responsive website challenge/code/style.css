@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(70, 130, 180, 1),
+    rgba(70, 130, 180, 0.5),
+    rgba(70, 130, 180, 0.15)
+  );
+  animation: slidein 2s ease-in;
+}
+#main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 50px;
+  width: 100%;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+  transition: 0.5s all;
+}
+
+img:hover {
+  width: 500px;
+  height: 250px;
+}
+
+.post > a {
+  margin: 3px;
+  text-decoration: none;
+  transition: 0.5s color;
+}
+
+.post > a:hover {
+  color: rgba(67, 194, 245, 0.95);
+}
+
+.sidebar {
+  background: rgba(255, 165, 0, 0.65);
+  margin: 0.5em;
+  animation: slidein 2s ease-in;
+}
+
+.post {
+  border: 0.2em solid rgba(255, 165, 0, 1);
+  margin: 0.5em;
+}
+
+.post-title,
+.post-text {
+  margin: 5px;
+}
+
+.content {
+  padding: 5px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-grid > img {
+  margin: 10px;
+}
+
+#image-1 {
+  float: right;
+  margin: 15px;
+  height: 300px;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

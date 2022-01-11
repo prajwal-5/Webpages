@@ -1,0 +1,43 @@
+:root {
+  --bg-color1: #845ec2;
+  --bg-color2: #ffc75f;
+  --bg-color3: #ff5e78;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  color: white;
+  font-family: cursive;
+  font-size: 3rem;
+}
+
+.view {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#one {
+  height: 80vh;
+  position: relative;
+  background: var(--bg-color1);
+  z-index: 900;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  margin-bottom: -20vh;
+}
+
+#two {
+  background: var(--bg-color2);
+  position: relative;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+}
+
+#three {
+  background: var(--bg-color3);
+}

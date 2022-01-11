@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <div class="heading">
+      <h1 id="title">Airlines Survey Form</h1>
+      <p id="description">Tell us about your journey</p>
+    </div>
+
+    <form id="survey-form" action="#">
+      <fieldset>
+        <legend>Passenger Details</legend>
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="Enter your Name" /><br />
+        <label id="email-label" for="email">E-Mail: </label>
+        <input id="email" type="email" placeholder="Enter your E-Mail" /><br />
+        <label id="number-label" for="number">Number of trips:</label>
+        <input
+          id="number"
+          type="number"
+          min="0"
+          max="100"
+          placeholder="Trip count"
+        /><br />
+        <label for="gender">Gender: </label><br />
+        <input id="male" name="gender" type="radio" />
+        <label for="male">Male</label>
+        <input id="Female" name="gender" type="radio" />
+        <label for="Female">Female</label>
+        <input id="others" name="gender" type="radio" />
+        <label for="others">Others</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Trip Details</legend>
+        <label id="dropdown-label" for="dropdown">Arrival: </label>
+        <select id="dropdown">
+          <option>Delhi</option>
+          <option>Chandigarh</option>
+          <option>Mumbai</option>
+          <option>Kolkata</option>
+          <option>Jammu</option>
+          <option>Chennai</option>
+          <option>Banglore</option>
+          <option>Hyderabad</option></select
+        ><br />
+        <label id="dropdown-label-2" for="dropdown-2">Departure: </label>
+        <select id="dropdown-2">
+          <option>Chandigarh</option>
+          <option>Mumbai</option>
+          <option>Kolkata</option>
+          <option>Jammu</option>
+          <option>Chennai</option>
+          <option>Banglore</option>
+          <option>Hyderabad</option></select
+        ><br />
+        <label for="checkbox">Services Availed: </label><br />
+        <input type="checkbox" id="c1" />
+        <label for="c1">Meals</label><br />
+        <input type="checkbox" id="c1" />
+        <label for="c1">Extra baggage</label><br />
+        <input type="checkbox" id="c1" />
+        <label for="c1">Flexible dates</label><br />
+        <input type="checkbox" id="c1" />
+        <label for="c1">Lounge</label><br />
+        <input type="checkbox" id="c1" />
+        <label for="c1">Upgrades</label><br />
+      </fieldset>
+
+      <fieldset id="last">
+        <legend>Feedback</legend>
+        <label for="comments">Your Suggestions: </label><br />
+        <textarea id="comments" rows="5" columns="5"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

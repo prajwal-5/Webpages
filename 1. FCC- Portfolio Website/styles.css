@@ -1,0 +1,190 @@
+:root {
+  --bg-color: rgba(0, 0, 0, 1);
+  --text-color: rgba(255, 255, 255, 1);
+  --sub-bg-color: rgba(255, 0, 208, 0.7);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: grid;
+  grid-template-rows: auto auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Redressed", cursive;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+#content {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#logo,
+#nav-links {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+#logo-img {
+  width: 4rem;
+  margin: 0.5rem;
+}
+
+#logo > h1 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+#nav-links {
+  justify-content: flex-end;
+}
+
+.navlink {
+  margin: 2rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+/* --------------------------nav-bar-end------------------------------------- */
+
+#welcome-section {
+  background: url("./resources/background-img.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-content {
+  margin-left: 7rem;
+  font-size: 2rem;
+}
+
+/*-------------------------welcome-section-end---------------->*/
+
+#projects {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 20rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 0px;
+  background: var(--sub-bg-color);
+  border-radius: 5px;
+}
+
+.project > img {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.project-title {
+  padding: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*----------------projects-end--------------------*/
+
+#contact {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile {
+  width: 10rem;
+}
+
+.profile > img {
+  background: var(--sub-bg-color);
+  border-radius: 50%;
+  width: 80%;
+}
+
+#github,
+#email {
+  text-align: center;
+}
+
+.profile > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/*--------------profile-end----------------------*/
+
+#about-me {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill2 {
+  flex-direction: row-reverse;
+  margin-top: 5rem;
+}
+
+.skill > img {
+  height: 7em;
+  margin: 0rem 2rem;
+}
+
+footer {
+  height: 30vh;
+  text-align: center;
+}
+
+footer > p {
+  font-size: 1.25rem;
+  margin: auto;
+}
+
+/*--------------------media-queries-------------------------------------*/
+
+@media (max-width: 800px) {
+  #navbar {
+    grid-template-columns: 1fr;
+  }
+  #logo,
+  #nav-links {
+    justify-content: center;
+  }
+  #projects {
+    height: 150vh;
+  }
+  footer {
+    height: 40vh;
+  }
+}
